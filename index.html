@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Photo</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="wrapper">
+        <!-- information section -->
+        <div class="card-wrapper">
+            <img src="./assets/mypic.jpg" alt="UserImg" class="user">
+            <h1 class="Name">Md Kaif ALam</h1>
+            <h3 class="founder">Founder, new Website</h3>
+            <div class="button-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+                    <i class="fa-solid fa-share"></i>
+                    <div>Share My Profile</div>
+                </button>
+                <button class="btn-follow btn-card">Follow Me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal form -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>share My profile</h1>
+            <div>
+                <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+        <h3>Share this Via</h3>
+        <div class="icon-container">
+            <a href="https://www.facebook.com" class="icon" target="_blank" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com" class="icon" target="_blank" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com" class="icon" target="_blank" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.whatsapp.com" class="icon" target="_blank" id="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.telegram.com" class="icon" target="_blank" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="overLay" onclick="closeModal()"></div>
+    <script src="https://kit.fontawesome.com/0856a878b2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
